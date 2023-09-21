@@ -318,5 +318,15 @@ function mulaiyuk(){
 }
 setTimeout(mulaiyuk,1400);
 </script>
+<script>
+  var audio = document.getElementById("linkmp3");
+  var count = 0;
+  audio.addEventListener('ended', function(){
+    count++;
+    if(count < 2){
+      audio.play();
+    }
+  });
+</script>
 </body>
 </html>
